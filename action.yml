@@ -32,8 +32,7 @@ runs:
     - name: Install Windows SDK ${{ inputs.sdkVersion }}
       shell: pwsh
       if: ${{ runner.os == 'Windows' }}
-      # run: .\.github\Install-WindowsSdkISO.ps1 ${{ inputs.sdkVersion }} 
-      # will add later via other action
+      uses: Lamparter/Install-WindowsSdk@v1.0.0
 
     # Run Uno.Check
     - name: Install ${{ inputs.target-platform }} Workloads
