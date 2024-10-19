@@ -29,8 +29,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Install Uno Workload
-        uses: Lamparter/Install-UnoDependencies@v1.1.0
+      - name: Install WinAppSDK workload
+        uses: Lamparter/Install-Dependencies@v1.1.0
         with:
           target-platform: 'all'
           dotnet-version: '8.0.x'
