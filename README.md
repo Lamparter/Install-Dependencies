@@ -30,7 +30,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install WinAppSDK workload
-        uses: Lamparter/Install-Dependencies@v1.1.0
+        uses: Lamparter/Install-Dependencies@v1.2.1
         with:
           target-platform: 'all'
           dotnet-version: '8.0.x'
