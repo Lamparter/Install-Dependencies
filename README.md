@@ -1,6 +1,6 @@
 # 📊 Install Dependencies Action
 
-#### A simple action to install dependencies for building an Uno Platform app.
+#### A simple action to install dependencies for building a WinAppSdk app.
 
 ---
 
