@@ -30,7 +30,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install Uno Workload
-        uses: lamparter/uno@v1.0.0
+        uses: Lamparter/Install-UnoDependencies@v1.1.0
         with:
           target-platform: 'all'
           dotnet-version: '8.0.x'
