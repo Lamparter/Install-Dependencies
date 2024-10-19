@@ -1,5 +1,5 @@
 name: Install Dependencies
-description: "A simple action to install dependencies for building an Uno Platform app."
+description: "A simple action to install dependencies for building a WinAppSdk app."
 
 branding:
   icon: 'download'
