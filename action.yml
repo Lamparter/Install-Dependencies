@@ -1,6 +1,10 @@
 name: Install Dependencies
 description: "A simple action to install dependencies for building an Uno Platform app."
 
+branding:
+  icon: 'download'
+  color: 'yellow'
+
 inputs:
   target-platform:
     description: 'The platform to install dependencies for. See available values at https://platform.uno/docs/articles/external/uno.check/doc/using-uno-check.html'
