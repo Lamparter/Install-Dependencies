@@ -14,7 +14,7 @@ inputs:
     description: 'Installs and sets the .NET SDK Version'
     required: false
     default: '8.0.x'
-  sdkVersion:
+  sdk-version:
     description: 'The version of the Windows SDK'
     required: false
     default: '19041'
@@ -29,7 +29,7 @@ runs:
         dotnet-version: '${{ inputs.dotnet-version }}'
 
     # Install Windows SDK
-    - name: Install Windows SDK ${{ inputs.sdkVersion }}
+    - name: Install Windows SDK ${{ inputs.sdk-version }}
       shell: pwsh
       if: ${{ runner.os == 'Windows' }}
       uses: Lamparter/Install-WindowsSdk@v1.0.0
