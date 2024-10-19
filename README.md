@@ -14,7 +14,7 @@
 
 **Optional** The .NET SDK version to install. Default is `8.0.x`.
 
-### `sdkVersion`
+### `sdk-version`
 
 **Optional** The version of the Windows SDK to install. Default is `19041`.
 
@@ -34,5 +34,5 @@ jobs:
         with:
           target-platform: 'all'
           dotnet-version: '8.0.x'
-          sdkVersion: '19041'
+          sdk-version: '19041'
 ```
