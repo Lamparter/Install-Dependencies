@@ -35,3 +35,4 @@ jobs:
           target-platform: 'all'
           dotnet-version: '8.0.x'
           sdkVersion: '19041'
+```
