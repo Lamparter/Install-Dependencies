@@ -18,6 +18,10 @@
 
 **Optional** The version of the Windows SDK to install. Default is `19041`.
 
+### `run-uno-check`
+
+**Optional** Whether to run the uno-check command. Default is `true`.
+
 ## ⚡  Example Usage
 
 ```yaml
@@ -35,4 +39,5 @@ jobs:
           target-platform: 'all'
           dotnet-version: '8.0.x'
           sdk-version: '19041'
+          run-uno-check: 'true'
 ```
