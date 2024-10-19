@@ -18,6 +18,10 @@ inputs:
     description: 'The version of the Windows SDK'
     required: false
     default: '19041'
+  run-uno-check:
+    description: 'Whether to run the uno-check command'
+    required: false
+    default: 'true'
 
 runs:
   using: "composite"
@@ -37,6 +41,7 @@ runs:
     # Run Uno.Check
     - name: Install ${{ inputs.target-platform }} Workloads
       shell: pwsh
+      if: ${{ inputs.run-uno-check == 'true' }}
       run: |
         dotnet tool install -g uno.check
         ("${{ inputs.target-platform }} ".Split(' ') | ForEach-Object {
