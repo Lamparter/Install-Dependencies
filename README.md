@@ -32,9 +32,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
       - name: Install WinAppSDK workload
-        uses: Lamparter/Install-Dependencies@v1.2.1
+        uses: Lamparter/Install-Dependencies@latest
         with:
           target-platform: 'all'
           dotnet-version: '8.0.x'
